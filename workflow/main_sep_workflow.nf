@@ -142,8 +142,8 @@ workflow.onComplete {
     	Duration              : ${workflow.duration}
     	Success              : ${workflow.success}
     	Exit Code            : ${workflow.exitStatus}
-   		WorkDir  		    : ${workflow.workDir}
-	   	PublishDir  	    : /home/ean/Samples_data/workflow/Samples/results_samplename_test
+   	WorkDir  		    : ${workflow.workDir}
+	PublishDir  	    : results (This folder will be located where you run the pipeline)
     	"""
     	.stripIndent()
     
