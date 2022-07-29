@@ -5,9 +5,9 @@ process PREPARE_SAMPLES {
 
     errorStrategy 'ignore'
     
-    publishDir "results/${sample_id}/${meta.runtype}", /*mode: params.publish_dir_mode, overwrite: params.force,*/
-        mode: 'copy',
-        saveAs: { filename -> "$filename" }
+    publishDir "results/${sample_id}/${meta.runtype}", 
+    mode: 'copy',
+    saveAs: { filename -> "$filename" }
 
     input:
     tuple val(meta), path(r1, stageAs: '*???-r1'), path(r2, stageAs: '*???-r2'), path(extra)
