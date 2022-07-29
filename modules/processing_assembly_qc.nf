@@ -18,14 +18,12 @@ process PROCESSING_ASSEMBLY_QC {
 
 	when:
 	meta.runtype == "assembled"
+	
 	script:
     	runtype = meta.runtype
 
 	"""
-
 	#QUAST Assembly quality evaluation
 	quast.py ${meta.id}_assembly.fasta -o ${meta.id}_Assemblies/${meta.id}_Assembly_Report
-
-
 	"""
 }
