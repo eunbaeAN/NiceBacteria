@@ -1,5 +1,4 @@
 nextflow.enable.dsl = 2
-//params.outdir = 'results'
 
 /*
 ========================================================================================
@@ -80,9 +79,7 @@ for (int i = 1; i <= samples_numbers; i++){
 }
 
 println"L'adresse mail : ${samples_info["email"][1]}"
-//println(samples_info["runtype"][0]) //runtype
-//println(samples_info["runtype"][1]) //hybrid
-//println(samples_info["runtype"][2]) //hybrid
+
 
 
 //count the number of raws and use for loop?? 
