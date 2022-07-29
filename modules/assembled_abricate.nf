@@ -2,12 +2,12 @@
 
 process ASSEMBLED_ABRICATE {
 
-    tag "${meta.id}, ${meta.runtype}"
+   	tag "${meta.id}, ${meta.runtype}"
 
 	errorStrategy 'ignore'
 
 	// cpus 36 
-    publishDir "results/${meta.id}/${meta.runtype}", /*mode: params.publish_dir_mode, overwrite: params.force,*/
+    	publishDir "results/${meta.id}/${meta.runtype}", /*mode: params.publish_dir_mode, overwrite: params.force,*/
         mode: 'copy',
         saveAs: { filename -> "$filename" }
 
@@ -43,24 +43,3 @@ process ASSEMBLED_ABRICATE {
 
 	"""
 }
-
-/*
- #assembly.fasta, I have to create this file having this name -> Sample_1_assembly.fasta
- #Simplify $files/Assemblies/Unicycler5.0_filtlong_"$files"_mode_bold/assembly.fasta ----> Sample_1_assembly.fasta 
- #Change the folder name from $files/Assemblies/Unicycler5.0_filtlong_"$files"_mode_bold to $files/Assemblies/Hybrid_Assembly_"$files"
-
-*/
-
-/*
-abricate --list
-DATABASE	SEQUENCES	DBTYPE	DATE
-argannot	2223	nucl	2022-Apr-28
-card	2631	nucl	2022-Apr-28
-ecoh	597	nucl	2022-Apr-28
-ecoli_vf	2701	nucl	2022-Apr-28
-megares	6635	nucl	2022-Apr-28
-ncbi	5386	nucl	2022-Apr-28
-plasmidfinder	460	nucl	2022-Apr-28
-resfinder	3077	nucl	2022-Apr-28
-vfdb	2597	nucl	2022-Apr-28
-*/
