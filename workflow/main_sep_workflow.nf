@@ -79,20 +79,6 @@ for (int i = 1; i <= samples_numbers; i++){
 }
 
 println"L'adresse mail : ${samples_info["email"][1]}"
-
-
-
-//count the number of raws and use for loop?? 
-/*
-if ((samples_info["runtype"]) == "hybrid"){
-	println "HIBRYD"
-}else {println "QUOI"}
-
-*/
-//def info_runtype = parseCsv(info_samples, separator: '\t', readFirstLine: true)
-//info_runtype.each { line -> println line["runtype"] }
-
-
 println "Vous allez  recevoir un mail à ${samples_info["email"][1]} une fois l'exécution est terminée"
 
 
