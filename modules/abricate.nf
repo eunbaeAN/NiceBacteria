@@ -7,7 +7,7 @@ process ABRICATE {
 	errorStrategy 'ignore'
 
 	// cpus 36 
-    publishDir "results/${meta.id}/${meta.runtype}", /*mode: params.publish_dir_mode, overwrite: params.force,*/
+    	publishDir "results/${meta.id}/${meta.runtype}", /*mode: params.publish_dir_mode, overwrite: params.force,*/
         mode: 'copy',
         saveAs: { filename -> "$filename" }
 
