@@ -20,7 +20,7 @@ process PREPROCESSING {
 	meta.runtype == "hybrid" || meta.runtype == "long-reads" || meta.runtype == "short-reads"
 
 	shell:
-    runtype = meta.runtype
+   	runtype = meta.runtype
 
 	'''
 	if [ "!{runtype}" == "short-reads" ]; then
