@@ -143,7 +143,7 @@ workflow.onComplete {
     	Success              : ${workflow.success}
     	Exit Code            : ${workflow.exitStatus}
    	WorkDir  		    : ${workflow.workDir}
-	PublishDir  	    : results (This folder will be located where you run the pipeline)
+	PublishDir  	    : ${workflow.launchDir}/results
     	"""
     	.stripIndent()
     
