@@ -2,12 +2,12 @@
 
 process ASSEMBLED_ROARY {
 
-    tag "${meta.id}, ${meta.runtype}"
+    	tag "${meta.id}, ${meta.runtype}"
 
 	errorStrategy 'ignore'
 
 	// cpus 36 
-    publishDir "results/${meta.id}/${meta.runtype}", /*mode: params.publish_dir_mode, overwrite: params.force,*/
+    	publishDir "results/${meta.id}/${meta.runtype}", /*mode: params.publish_dir_mode, overwrite: params.force,*/
         mode: 'copy',
         saveAs: { filename -> "$filename" }
 
