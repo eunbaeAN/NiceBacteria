@@ -31,7 +31,7 @@ include { BARRNAP } from '../modules/barrnap'
 include { FASTANI } from '../modules/fastani'
 include { MLST } from '../modules/mlst'
 include { ROARY } from '../modules/roary'
-include { FASTTREE } from '../modules/fasttree'
+include { PHYLO_TREE} from '../modules/phylotree'
 
 include { ASSEMBLED_DFAST } from '../modules/assembled/assembled_dfast'
 include { ASSEMBLED_ABRICATE } from '../modules/assembled/assembled_abricate'
@@ -39,7 +39,7 @@ include { ASSEMBLED_BARRNAP } from '../modules/assembled/assembled_barrnap'
 include { ASSEMBLED_FASTANI } from '../modules/assembled/assembled_fastani'
 include { ASSEMBLED_MLST } from '../modules/assembled/assembled_mlst'
 include { ASSEMBLED_ROARY } from '../modules/assembled/assembled_roary'
-include { ASSEMBLED_FASTTREE } from '../modules/assembled/assembled_fasttree'
+include { ASSEMBLED_PHYLO_TREE } from '../modules/assembled/assembled_phylotree'
 
 
 /*
@@ -96,7 +96,7 @@ workflow TEST_WORKFLOW {
 		MLST(PROCESSING.out.assembly_results_fasta)
 		FASTANI(BARRNAP.out.barrnap_xls_results.join(PROCESSING.out.assembly_results_fasta))
 		ROARY(DFAST.out.dfast_gff_results.join(FASTANI.out.fastani_results))
-		FASTTREE(BARRNAP.out.barrnap_results)
+		PHYLO_TREE(BARRNAP.out.barrnap_results)
 
 
 //When the users provide the assembled fasta files, it starts from QUAST.
@@ -108,7 +108,7 @@ workflow TEST_WORKFLOW {
 		ASSEMBLED_MLST(PREPARE_SAMPLES.out.assembled_fasta)
 		ASSEMBLED_FASTANI(ASSEMBLED_BARRNAP.out.assembled_barrnap_xls_results.join(PREPARE_SAMPLES.out.assembled_fasta))
 		ASSEMBLED_ROARY(ASSEMBLED_DFAST.out.assembled_dfast_gff_results.join(ASSEMBLED_FASTANI.out.assembled_fastani_results))
-		ASSEMBLED_FASTTREE(ASSEMBLED_BARRNAP.out.assembled_barrnap_results)
+		ASSEMBLED_PHYLO_TREE(ASSEMBLED_BARRNAP.out.assembled_barrnap_results)
 
 
 
