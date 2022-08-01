@@ -1,4 +1,5 @@
 nextflow.enable.dsl = 2
+//params.outdir = 'results'
 
 /*
 ========================================================================================
@@ -31,7 +32,7 @@ include { BARRNAP } from '../modules/barrnap'
 include { FASTANI } from '../modules/fastani'
 include { MLST } from '../modules/mlst'
 include { ROARY } from '../modules/roary'
-include { PHYLO_TREE} from '../modules/phylotree'
+include { PHYLO_TREE } from '../modules/phylotree'
 
 include { ASSEMBLED_DFAST } from '../modules/assembled/assembled_dfast'
 include { ASSEMBLED_ABRICATE } from '../modules/assembled/assembled_abricate'
@@ -79,6 +80,22 @@ for (int i = 1; i <= samples_numbers; i++){
 }
 
 println"L'adresse mail : ${samples_info["email"][1]}"
+//println(samples_info["runtype"][0]) //runtype
+//println(samples_info["runtype"][1]) //hybrid
+//println(samples_info["runtype"][2]) //hybrid
+
+
+//count the number of raws and use for loop?? 
+/*
+if ((samples_info["runtype"]) == "hybrid"){
+	println "HIBRYD"
+}else {println "QUOI"}
+
+*/
+//def info_runtype = parseCsv(info_samples, separator: '\t', readFirstLine: true)
+//info_runtype.each { line -> println line["runtype"] }
+
+
 println "Vous allez  recevoir un mail à ${samples_info["email"][1]} une fois l'exécution est terminée"
 
 
@@ -131,7 +148,7 @@ workflow.onComplete {
 
     def subject = 'Pipeline execution is finished'
     def recipient = "${samples_info["email"][1]}"
-    def attach = '/home/ean/Samples_data/workflow/Samples/REPORT.html'
+    def attach = "${workflow.launchDir}/REPORT.html"
     ['mail', '-a', attach, '-s', subject, recipient ].execute() << """
  
     	Pipeline Execution Summary
