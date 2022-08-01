@@ -42,7 +42,7 @@ process PHYLO_TREE {
 	iqtree -s !{meta.id}_Phylogenetic_tree/!{meta.id}_multiple_alignments_by_muscle.afa -m GTR+I+G
 
 	if [ -f "!{meta.id}_Phylogenetic_tree/!{meta.id}_multiple_alignments_by_muscle.afa.treefile" ]; then
-		xvfb-run -a python /home/ean/Samples_data/workflow/Samples/separation_nextflow_modules/modules/bin/Tree_viewer.py --nw !{meta.id}_Phylogenetic_tree/!{meta.id}_multiple_alignments_by_muscle.afa.treefile
+		xvfb-run -a python /home/ean/Samples_data/workflow/Samples/separation_nextflow_modules/modules/bin/tree_viewer.py --nw !{meta.id}_Phylogenetic_tree/!{meta.id}_multiple_alignments_by_muscle.afa.treefile
     	if [ -s phylotree.png ]; then
     	cp phylotree.png !{meta.id}_Phylogenetic_tree/!{meta.id}_phylotree.png
 		fi
