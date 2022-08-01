@@ -33,13 +33,13 @@ include { MLST } from '../modules/mlst'
 include { ROARY } from '../modules/roary'
 include { FASTTREE } from '../modules/fasttree'
 
-include { ASSEMBLED_DFAST } from '../modules/assembled_dfast'
-include { ASSEMBLED_ABRICATE } from '../modules/assembled_abricate'
-include { ASSEMBLED_BARRNAP } from '../modules/assembled_barrnap'
-include { ASSEMBLED_FASTANI } from '../modules/assembled_fastani'
-include { ASSEMBLED_MLST } from '../modules/assembled_mlst'
-include { ASSEMBLED_ROARY } from '../modules/assembled_roary'
-include { ASSEMBLED_FASTTREE } from '../modules/assembled_fasttree'
+include { ASSEMBLED_DFAST } from '../modules/assembled/assembled_dfast'
+include { ASSEMBLED_ABRICATE } from '../modules/assembled/assembled_abricate'
+include { ASSEMBLED_BARRNAP } from '../modules/assembled/assembled_barrnap'
+include { ASSEMBLED_FASTANI } from '../modules/assembled/assembled_fastani'
+include { ASSEMBLED_MLST } from '../modules/assembled/assembled_mlst'
+include { ASSEMBLED_ROARY } from '../modules/assembled/assembled_roary'
+include { ASSEMBLED_FASTTREE } from '../modules/assembled/assembled_fasttree'
 
 
 /*
