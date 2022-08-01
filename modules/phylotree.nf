@@ -1,6 +1,6 @@
 #!/usr/bin/env nextflow
 
-process FASTTREE {
+process PHYLO_TREE {
 
     	tag "${meta.id}, ${meta.runtype}"
 
