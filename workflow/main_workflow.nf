@@ -7,7 +7,7 @@ nextflow.enable.dsl = 2
 ========================================================================================
 */
 
-include { create_input_channel } from '../lib/nf/test_samplename'
+include { create_input_channel } from '../lib/nf/input_channel'
 //workflow keyword allows the definition of sub-workflow components that enclose the invocation of one or more processes and operators: 
 
 //run_type = WorkflowPipeline.initialise(workflow, params, log)
