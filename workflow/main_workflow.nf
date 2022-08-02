@@ -85,17 +85,6 @@ println"L'adresse mail : ${samples_info["email"][1]}"
 //println(samples_info["runtype"][2]) //hybrid
 
 
-//count the number of raws and use for loop?? 
-/*
-if ((samples_info["runtype"]) == "hybrid"){
-	println "HIBRYD"
-}else {println "QUOI"}
-
-*/
-//def info_runtype = parseCsv(info_samples, separator: '\t', readFirstLine: true)
-//info_runtype.each { line -> println line["runtype"] }
-
-
 println "Vous allez  recevoir un mail à ${samples_info["email"][1]} une fois l'exécution est terminée"
 
 
@@ -131,9 +120,6 @@ workflow TEST_WORKFLOW {
 
 }
 
-
-//take keyword : declare one or more input channels
-//when the "take" keyword is used, the beginning of the worflow body must be identified with the "main" keyword  
 
 
 
