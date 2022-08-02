@@ -24,7 +24,7 @@ params.empty_r2 = "${baseDir}/Data/EMPTY_R2"
 ========================================================================================
 */
 
-include { TEST_WORKFLOW } from './modules/main_sep_workflow'
+include { TEST_WORKFLOW } from './modules/main_workflow'
 
 
 /*
