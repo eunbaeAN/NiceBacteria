@@ -21,7 +21,7 @@ def create_input_channel(runtype) {
 
 
 def process_fofn(line) {
-    /* Parse line and determine if single end or paired reads*/
+    /* Parse line and determine if long-reads or short-reads or hybrid or assembled */
     def meta = [:]
     meta.id = line.sample
     meta.runtype = line.runtype
