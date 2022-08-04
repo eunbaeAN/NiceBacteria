@@ -1,6 +1,3 @@
-import groovy.json.JsonSlurper
-
-
 def create_input_channel(runtype) {
 //if_fofn => if (Utils.isLocal(params.samples)) { error += Utils.fileNotFound(params.samples, 'samples', log)}
              //run_type = "is_fofn" (ref: lib/WorkflowPipeline.groovy)
