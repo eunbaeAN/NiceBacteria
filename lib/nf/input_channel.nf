@@ -4,6 +4,7 @@ def create_input_channel(runtype) {
             .splitCsv(header: true, strip: true, sep: '\t')
             .map { row -> process_fofn(row) }
     } else {
+    /*else if there is only one single sample */
         def meta = [:]
         meta.id = params.sample
         meta.runtype = runtype
