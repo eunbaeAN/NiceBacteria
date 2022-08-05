@@ -89,7 +89,7 @@ println "Vous allez  recevoir un mail à ${samples_info["email"][1]} une fois l'
 
 
 workflow TEST_WORKFLOW {
-		input_ch = create_input_channel("multiples_samples")
+		input_ch = create_input_channel("multiple_samples")
 		PREPARE_SAMPLES(input_ch)
 		PREPARE_SAMPLES.out.FileExists.view()
 
