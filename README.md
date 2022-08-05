@@ -1,7 +1,7 @@
 # Nice_Bacteria
 IRCAN_pipeline is a pipeline for bacterial genome analysis. This pipeline targets _Bacillus cereus_ genomes. However, it can be used for other bacterial species. 
 
-# OVERVIEW of IRCAN_pipeline
+# OVERVIEW
 ![alt text](https://github.com/eunbaeAN/IRCAN_pipeline/blob/main/overview.png?raw=true)
 
 # Description 
@@ -13,5 +13,11 @@ This pipeline is developped to automate the whole bacterial genome analysis usin
  ``` 
  nextflow run main.nf --samples "my-samples.csv" -ansi-log false
  ```
+* Create csv file "my-samples.csv"
+This pipeline requires a csv file (or text file) describing the input samples. This file contains 7 columns :
+sample, runtype, r1, r2, long_reads, assembled_fasta, email. 
+
+sample names, location to assicociated input files (FASTQs), email adresse. 
 * 
+*  
 
