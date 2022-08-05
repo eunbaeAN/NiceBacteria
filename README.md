@@ -14,6 +14,7 @@ This pipeline is developped to automate the whole bacterial genome analysis usin
  nextflow run main.nf --samples "my-samples.csv" -ansi-log false
  ```
  **Create csv file "my-samples.csv"**
+
 This pipeline requires a csv file (or text file) describing the input samples. This file contains 7 columns :
 sample, runtype, r1, r2, long_reads, assembled_fasta, email. 
 
