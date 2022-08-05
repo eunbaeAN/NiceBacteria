@@ -1,5 +1,5 @@
 def create_input_channel(runtype) {
-    if (runtype == "multiples_samples") {
+    if (runtype == "multiple_samples") {
         return Channel.fromPath( params.samples )
             .splitCsv(header: true, strip: true, sep: '\t')
             .map { row -> process_fofn(row) }
