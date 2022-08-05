@@ -1,4 +1,4 @@
-# IRCAN_pipeline
+# Nice_Bacteria
 IRCAN_pipeline is a pipeline for bacterial genome analysis. This pipeline targets _Bacillus cereus_ genomes. However, it can be used for other bacterial species. 
 
 # OVERVIEW of IRCAN_pipeline
