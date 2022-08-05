@@ -1,5 +1,5 @@
-# Nice_Bacteria
-IRCAN_pipeline is a pipeline for bacterial genome analysis. This pipeline targets _Bacillus cereus_ genomes. However, it can be used for other bacterial species. 
+# NiceBacteria
+NiceBacteria is a pipeline for bacterial genome analysis. This pipeline targets _Bacillus cereus_ genomes. However, it can be used for other bacterial species. 
 
 # OVERVIEW
 ![alt text](https://github.com/eunbaeAN/IRCAN_pipeline/blob/main/overview.png?raw=true)
