@@ -9,11 +9,11 @@ This pipeline has been built using Nextflow to manage the workflow.
 This pipeline is developped to automate the whole bacterial genome analysis using sequencing data obtained from Illumina technology (short reads) or/and Oxford Nanopore Technology or Pacific Biosciences technology (long reads).
 
 # Tutorial
- * Running pipeline
+ **Running pipeline**
  ``` 
  nextflow run main.nf --samples "my-samples.csv" -ansi-log false
  ```
- * Create csv file "my-samples.csv"
+ **Create csv file "my-samples.csv"**
 This pipeline requires a csv file (or text file) describing the input samples. This file contains 7 columns :
 sample, runtype, r1, r2, long_reads, assembled_fasta, email. 
 
