@@ -1,0 +1,11 @@
+sample	runtype	r1	r2	long_reads	assembled_fasta	email
+Sample_66	short-reads	/home/mbenkhedher/data_tes_3_strains/sample_66/FCHCM7VCCX2_L2_wHAXPI124785-34_1.fq.gz	/home/mbenkhedher/data_tes_3_strains/sample_66/FCHCM7VCCX2_L2_wHAXPI124785-34_2.fq.gz	-	-	aeunbae@gmail.com
+Sample_66	hybrid	/home/mbenkhedher/data_tes_3_strains/sample_66/FCHCM7VCCX2_L2_wHAXPI124785-34_1.fq.gz	/home/mbenkhedher/data_tes_3_strains/sample_66/FCHCM7VCCX2_L2_wHAXPI124785-34_2.fq.gz	/home/mbenkhedher/data_tes_3_strains/sample_66/8522007000991.reads.fastq.gz	-	-
+Sample_KPN-H	short-reads	/home/mbenkhedher/data_tes_3_strains/sample_KPN-H/FCHCM7VCCX2_L2_wHAXPI124772-37_1.fq.gz	/home/mbenkhedher/data_tes_3_strains/sample_KPN-H/FCHCM7VCCX2_L2_wHAXPI124772-37_2.fq.gz	-	-	-
+Sample_KPN-H	long-reads	-	-	/home/mbenkhedher/data_tes_3_strains/sample_KPN-H/8522007000994.reads.fastq.gz	-	-
+Sample_Noc-Casa	long-reads	-	-	/home/mbenkhedher/data_tes_3_strains/sample_Noc-Casa/8522007000993.reads.fastq.gz	-	-
+Sample_Noc-Casa	hybrid	/home/mbenkhedher/data_tes_3_strains/sample_Noc-Casa/FCHCM7VCCX2_L2_wHAXPI124787-36_1.fq.gz	/home/mbenkhedher/data_tes_3_strains/sample_Noc-Casa/FCHCM7VCCX2_L2_wHAXPI124787-36_2.fq.gz	/home/mbenkhedher/data_tes_3_strains/sample_Noc-Casa/8522007000993.reads.fastq.gz	-	-
+Sample_mariem	short-reads	/home/mbenkhedher/data_tes_3_strains/sample_mariem/FCHCM7VCCX2_L2_wHAXPI124785-34_1.fq.gz	/home/mbenkhedher/data_tes_3_strains/sample_mariem/FCHCM7VCCX2_L2_wHAXPI124785-34_2.fq.gz	-	-	-
+Sample_mariem	long-reads	-	-	/home/mbenkhedher/data_tes_3_strains/sample_mariem/8522007000994.reads.fastq.gz	-	-
+Sample_mariem	hybrid	/home/mbenkhedher/data_tes_3_strains/sample_mariem/FCHCM7VCCX2_L2_wHAXPI124785-34_1.fq.gz	/home/mbenkhedher/data_tes_3_strains/sample_mariem/FCHCM7VCCX2_L2_wHAXPI124785-34_2.fq.gz	/home/mbenkhedher/data_tes_3_strains/sample_mariem/8522007000994.reads.fastq.gz	-	-
+Sample_1	assembled	-	-	-	/home/mbenkhedher/data_tes_3_strains/sample_assembly_test/genome.fasta	-
