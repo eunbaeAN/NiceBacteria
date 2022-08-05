@@ -17,7 +17,7 @@ This pipeline is developped to automate the whole bacterial genome analysis usin
 
 This pipeline requires a csv file (or text file) describing the input samples. This file contains 7 columns :
 sample, runtype, r1, r2, long_reads, assembled_fasta, email. 
-
+*Attention, these columns need to be tab delimited.*
 sample names, location to assicociated input files (FASTQs), email adresse. 
 * 
 *  
