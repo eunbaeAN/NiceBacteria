@@ -10,6 +10,8 @@ This pipeline is developped to automate the whole bacterial genome analysis usin
 
 # Tutorial
 * Running pipeline
-nextflow run main.nf --samples "my-samples.csv" -ansi-log false
-
+ ``` 
+ nextflow run main.nf --samples "my-samples.csv" -ansi-log false
+ ```
+* 
 
