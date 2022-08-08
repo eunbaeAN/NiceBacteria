@@ -16,7 +16,7 @@ The overview above summarises the different process and component tools of this 
  ``` 
  nextflow run main.nf --samples "my-samples.csv" -ansi-log false
  ```
-Please do not forget to put the parameter --samples to provide the information of your samples. 
+Please do not forget to put the parameter '--samples' to provide the information of your samples. 
 
 **Create csv file "my-samples.csv"**
 This pipeline requires a csv file (or text file) describing the input samples. This file contains 7 columns :
