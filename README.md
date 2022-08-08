@@ -5,7 +5,10 @@ NiceBacteria is a pipeline for bacterial genome analysis. This pipeline targets 
 ![alt text](https://github.com/eunbaeAN/IRCAN_pipeline/blob/main/overview.png?raw=true)
 
 # Description 
-This pipeline has been built using Nextflow to manage the workflow. This pipeline is developped to automate the whole bacterial genome analysis using sequencing data obtained from Illumina technology (short reads) or/and Oxford Nanopore Technology or Pacific Biosciences technology (long reads).
+This pipeline is developped to automate the whole bacterial genome analysis. It has been built using Nextflow to manage the workflow. It manages the parallel execution of tasks and creates REPORT.html allowing users to 
+
+
+This pipeline is developped to automate the whole bacterial genome analysis using sequencing data obtained from Illumina technology (short reads) or/and Oxford Nanopore Technology or Pacific Biosciences technology (long reads).
 The overview above summarises the different process and component tools of this pipeline.
 # Tutorial
  **Running pipeline**
