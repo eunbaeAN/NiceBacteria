@@ -30,7 +30,8 @@ This file contains 7 columns : sample, runtype, r1, r2, long_reads, assembled_fa
 
  ``` 
 - sample : Sample name. Remember that this name would be used when the output file is created. 
-- runtype : You can choose between four types of runtypes. "short-reads or long-reads or hybrid or assembled_fasta" (Attnetion, it's case-sensitive.)  
+- runtype : You can choose one among four types of runtypes depending on your data sets. 
+            "short-reads or long-reads or hybrid or assembled_fasta" (Attnetion, it's case-sensitive.)  
 - r1 : short paired-end reads, forward for r1. 
 - r2 : short paired-end reads, reverse for r2. 
 - long_reads : long single-end reads. 
