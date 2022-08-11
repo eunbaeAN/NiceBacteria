@@ -24,7 +24,7 @@ The post-processing step consists of annotation, taxonomic classification, the d
  ```
 Please do not forget to put the parameter '--samples' to provide the information of your samples. 
 
-**Create csv file "my-samples.csv"**
+**Create csv file "my-samples.csv" (tab delimited file)**
 This pipeline requires a csv file (or text file) describing the input samples. This file contains 7 columns :
 sample, runtype, r1, r2, long_reads, assembled_fasta, email. 
 *Attention, these columns need to be tab delimited.*
