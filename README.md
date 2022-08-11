@@ -26,7 +26,7 @@ Please do not forget to put the parameter '--samples' to provide the information
 ### Create csv file "my-samples.csv" (tab delimited file)
 
 This pipeline requires a csv file (or text file) describing the input samples. See an example file "my-samples.csv". 
-This file contains 7 columns. The header of these columns should be : sample, runtype, r1, r2, long_reads, assembled_fasta, email. ***Attention, these columns must be delimited by tabs. And, it's case-sensitive, so please make sure that the header is written in lowercase.*** The "runtype" column will eventually choose the type of input files and an assembler. See below to further information.
+This file contains 7 columns. The header of these columns should be : sample, runtype, r1, r2, long_reads, assembled_fasta, email. ***Attention, these columns must be delimited by tabs. And, it's case-sensitive, so please make sure that the header is written in lowercase.*** The "runtype" column will eventually choose the type of input files and an assembler. See below to further information. And please fill blank cell with "-" or "NA" so that there is no empty cell. 
 
 
 |sample|runtype| r1 | r2 | long_reads | assembled_fasta | email |
