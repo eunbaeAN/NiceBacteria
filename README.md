@@ -12,9 +12,8 @@ The overview above summarises the different processes and component open-source 
 
 This pipeline can be split into three main components : pre-processing, processing, and post processing. 
 The pre-processing step contains quality controls and trimming step.
-The processing step includes de *novo* assembly and the evaluation of assembly. 
+The processing step includes de *novo* assembly and the evaluation of genome assembly. 
 The post-processing step consists of annotation, taxonomic classification, the detection of resistance and virulence genes, multi-locus sequence typing (MLST) for characterization of bacterial genome, and pan-genome analysis and phylogenetic analysis which provide comparative genomic analysis.
-
 
 
 # Tutorial
