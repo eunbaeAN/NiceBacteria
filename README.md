@@ -18,17 +18,17 @@ The post-processing step consists of annotation, taxonomic classification, the d
 
 
 # Tutorial
-## Running pipeline**
+### Running pipeline
  ``` 
  nextflow run main.nf --samples "my-samples.csv" -ansi-log false
  ```
 Please do not forget to put the parameter '--samples' to provide the information of your samples. 
 
-## Create csv file "my-samples.csv" (tab delimited file)
+### Create csv file "my-samples.csv" (tab delimited file)
 
 This pipeline requires a csv file (or text file) describing the input samples. See an example file "my-samples.csv". This file contains 7 columns :
 sample, runtype, r1, r2, long_reads, assembled_fasta, email. 
-*Attention, these columns need to be tab delimited.*
+**Attention, these columns need to be tab delimited.**
 sample names, location to assicociated input files (FASTQs), email adresse. 
 * 
 *  
