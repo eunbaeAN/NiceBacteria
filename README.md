@@ -29,12 +29,13 @@ This pipeline requires a csv file (or text file) describing the input samples. S
 This file contains 7 columns : sample, runtype, r1, r2, long_reads, assembled_fasta, email. ***Attention, these columns need to be tab delimited. And, it's case-sensitive, please do not confuse uppercase and lowercase letters***
 
  ``` 
+ ================================================================================================================================================================ 
 - sample : Sample name. Remember that this name would be used when the output file is created. 
 - runtype : You can choose one among four types of runtypes depending on your data sets. 
            "short-reads or long-reads or hybrid or assembled_fasta" 
            (Attnetion, it's case-sensitive. You should write this word in the exactly same way.)
-           ** short-reads ** : This takes only short paired-end reads as inputs. It will use the SPAdes as an assembler.
-           ** long-reads ** : When you have only long single-end reads. This uses the Flye as an assembler.
+           short-reads : This takes only short paired-end reads as inputs. It will use the SPAdes as an assembler.
+           long-reads : When you have only long single-end reads. This uses the Flye as an assembler.
            ** hybrid ** : When you have both short paired-end reads and long single-end reads. Unicycler is integrated for hybrid assembler. 
            ** assembled_fasta ** : When you have a FASTA file which has been already assembled. In this case, the pipeline starts from the evalutation of genome assembly. 
 - r1 : short paired-end reads, forward for r1. 
@@ -42,7 +43,8 @@ This file contains 7 columns : sample, runtype, r1, r2, long_reads, assembled_fa
 - long_reads : long single-end reads. 
 - assembled_fasta : The FASTA file which is already assembled. 
  - email : The email address that you want to be informed when the execution of the pipeline is completed. 
-**The complete location of each input file (FASTQs) is nedded for r1, r2, long_reads and assembled_fasta.**
+The complete location of each input file (FASTQs) is nedded for r1, r2, long_reads and assembled_fasta.
+================================================================================================================================================================
  ``` 
 
 
