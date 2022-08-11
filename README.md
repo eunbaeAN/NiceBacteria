@@ -19,7 +19,7 @@ The post-processing step consists of annotation, taxonomic classification, the d
 # Tutorial
 ### Running pipeline
  ``` 
- nextflow run main.nf --samples "/path/to/my-samples.csv" -ansi-log false
+ nextflow run /path/to/main.nf --samples "/path/to/my-samples.csv" -ansi-log false
  ```
 Please do not forget to put the parameter '--samples' to provide the information of your samples. 
 
