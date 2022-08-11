@@ -30,7 +30,7 @@ This file contains 7 columns. The header of these columns should be : sample, ru
 
 
 |sample|runtype| r1 | r2 | long_reads | assembled_fasta | email |
-|-------|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|
+|-------|:--------:|:-----:|:-----:|:-----:|:-----:|:-----:|
 |Sample_1| short-reads | path/to/Illumina_R1.fq.gz |  path/to/Illumina_R2.fq.gz |-|-| email@gmail.com|
 |Sample_2| long-reads | - | - | path/to/long_reads_file.fq.gz | - | - |   
 
