@@ -8,7 +8,7 @@ NiceBacteria is a pipeline for bacterial genome analysis. This pipeline is devel
 The main purpose of this pipeline is to automate the processing of high-throughput sequencing (HTS) data for whole bacterial genome analysis. It has been built using Nextflow to manage the workflow. It manages the parallel execution of sereral tasks and creates REPORT.html, a single document includes useful metrics about a workflow execution. This pipeline sends a mail once the execution is completed. This email includes the information about a workflow execution and the execution report (REPORT.html).
 
 
-The overview above summarises the different processes and component bioinformatics tools incorporated into this pipeline. This pipeline takes FASTQ files provided locally as inputs and processes them automatically with open-source bioinformatics tools and create the output files locally.
+The overview above summarises the different processes and component open-source bioinformatics tools incorporated into this pipeline. It takes FASTQ files provided locally as inputs and processes them automatically with the bioinformatics tools and creates the output files locally.
 
 This pipeline can be split into three main components : pre-processing, processing, and post processing. 
 The pre-processing step contains quality controls and trimming step.
@@ -25,11 +25,11 @@ The post-processing step consists of annotation, taxonomic classification, the d
 Please do not forget to put the parameter '--samples' to provide the information of your samples. 
 
 ### Create csv file "my-samples.csv" (tab delimited file)
-This pipeline requires a csv file (or text file) describing the input samples. See an example file "my-samples.csv". <br>This file contains 7 columns :
+
+This pipeline requires a csv file (or text file) describing the input samples. See an example file "my-samples.csv". 
+This file contains 7 columns :
 sample, runtype, r1, r2, long_reads, assembled_fasta, email. 
-
-**Attention, these columns need to be tab delimited.**
-
+*** Attention, these columns need to be tab delimited. ***
 - sample : sample names email adresse. 
 - runtype : 
 - r1 : short paired-end reads, forward for r1. 
