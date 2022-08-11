@@ -32,12 +32,12 @@ This file contains 7 columns. The header of these columns should be : sample, ru
  
 - sample : Sample name. Remember that this name would be used when the output file is created. 
 - runtype : You can choose one among four runtypes depending on your data sets. 
-           "short-reads or long-reads or hybrid or assembled_fasta" 
+           "short-reads, long-reads, hybrid or assembled_fasta"
            (Attnetion, it's case-sensitive. You should write this word in the exactly same way.)
            short-reads : This takes only short paired-end reads as inputs. It will use the SPAdes as an assembler.
            long-reads : When you have only long single-end reads. This uses the Flye as an assembler.
            hybrid : When you have both short paired-end reads and long single-end reads. Unicycler is integrated for hybrid assembler. 
-           assembled_fasta : When you have a FASTA file which has been already assembled. This runtype skips the assembly and starts from the evalutation of genome assembly. 
+           assembled_fasta : When you have a FASTA file which has been already assembled. This skips the assembly and starts from the evalutation of genome assembly. 
 - r1 : short paired-end reads, forward for r1. 
 - r2 : short paired-end reads, reverse for r2. 
 - long_reads : long single-end reads. 
