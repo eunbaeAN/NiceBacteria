@@ -31,14 +31,14 @@ sample, runtype, r1, r2, long_reads, assembled_fasta, email.
 
 **Attention, these columns need to be tab delimited.**
 
-- sample : sample names, location to assicociated input files (FASTQs), email adresse. 
-- runtype
-- r1
-- r2
-- long_reads
-- assembled_fasta
+- sample : sample names email adresse. 
+- runtype : 
+- r1 : short paired-end reads, forward for r1. The complete location of this input file (FASTQs) is nedded. 
+- r2 : short paired-end reads, reverse for r2. The complete location of this input file (FASTQs) is nedded.
+- long_reads : long single-end reads. The complete location of this input file (FASTQs) is nedded. 
+- assembled_fasta : The FASTA file which is already assembled. The complete location of this input file (FASTQs) is nedded. 
 - email 
-- 
+
 # Inputs/outputs 
 
 This pipeline takes FASTQs as input the whole bacterial genome analysis using short read sequencing data obtained from Illumina technology or/and long read sequencing data obtained from Oxford Nanopore Technology or Pacific Biosciences technology. 
