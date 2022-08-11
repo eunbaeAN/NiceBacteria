@@ -19,7 +19,7 @@ The post-processing step consists of annotation, taxonomic classification, the d
 # Tutorial
 ### Running pipeline
  ``` 
- nextflow run main.nf --samples "my-samples.csv" -ansi-log false
+ nextflow run main.nf --samples "/path/to/my-samples.csv" -ansi-log false
  ```
 Please do not forget to put the parameter '--samples' to provide the information of your samples. 
 
@@ -27,7 +27,7 @@ Please do not forget to put the parameter '--samples' to provide the information
 
 This pipeline requires a csv file (or text file) describing the input samples. See an example file "my-samples.csv". 
 This file contains 7 columns : sample, runtype, r1, r2, long_reads, assembled_fasta, email. ***Attention, these columns need to be tab delimited.***
-
+ ``` 
 - sample : Sample name. Remember that this name would be used when the output file is created. 
 - runtype : You can choose between four types of runtypes. "short-reads or long-reads or hybrid or assembled_fasta" (Attnetion, it's case-sensitive.)  
 - r1 : short paired-end reads, forward for r1. 
@@ -36,6 +36,7 @@ This file contains 7 columns : sample, runtype, r1, r2, long_reads, assembled_fa
 - assembled_fasta : The FASTA file which is already assembled. 
  - email : The email address that you want to be informed when the execution of the pipeline is completed. 
 **The complete location of each input file (FASTQs) is nedded.**
+ ``` 
 
 
 # Inputs/outputs 
