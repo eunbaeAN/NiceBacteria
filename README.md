@@ -1,7 +1,7 @@
 # NiceBacteria
 NiceBacteria is a pipeline for bacterial genome analysis. This pipeline is developed to target _Bacillus cereus_ genomes, however, it can be used for other bacterial species. 
 
-# OVERVIEW
+# Overview
 ![alt text](https://github.com/eunbaeAN/IRCAN_pipeline/blob/main/overview.png?raw=true)
 
 # Description 
