@@ -37,7 +37,7 @@ This file contains 7 columns. The header of these columns should be : sample, ru
 |Sample_4|assembled_fasta|-|-|-|path/to/FASTA.fa|-|   
 
  ``` 
- ======================================================================================================================================================== 
+ =================================================================================================================================================================== 
  
 - sample : Sample name. Remember that this name would be used when the output file is created. 
 - runtype : You can choose one among four runtypes depending on your data sets. 
@@ -54,7 +54,7 @@ This file contains 7 columns. The header of these columns should be : sample, ru
  - email : The email address that you want to be informed when the execution of the pipeline is completed. 
 The complete location of each input file (FASTQs) is needed for r1, r2, long_reads and assembled_fasta.
 
-=========================================================================================================================================================
+===================================================================================================================================================================
  ``` 
 
 
