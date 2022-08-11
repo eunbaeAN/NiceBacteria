@@ -28,16 +28,16 @@ Please do not forget to put the parameter '--samples' to provide the information
 This pipeline requires a csv file (or text file) describing the input samples. See an example file "my-samples.csv". 
 This file contains 7 columns. The header of these columns should be : sample, runtype, r1, r2, long_reads, assembled_fasta, email. ***Attention, these columns must be delimited by tabs. And, it's case-sensitive, so please make sure that the header is written in lowercase.*** The "runtype" column will eventually choose the type of input files and an assembler. See below to further information.
  ``` 
- ================================================================================================================================================================ 
+ ======================================================================================================================================================== 
  
 - sample : Sample name. Remember that this name would be used when the output file is created. 
-- runtype : You can choose one among four types of runtypes depending on your data sets. 
+- runtype : You can choose one among four runtypes depending on your data sets. 
            "short-reads or long-reads or hybrid or assembled_fasta" 
            (Attnetion, it's case-sensitive. You should write this word in the exactly same way.)
            short-reads : This takes only short paired-end reads as inputs. It will use the SPAdes as an assembler.
            long-reads : When you have only long single-end reads. This uses the Flye as an assembler.
-           ** hybrid ** : When you have both short paired-end reads and long single-end reads. Unicycler is integrated for hybrid assembler. 
-           ** assembled_fasta ** : When you have a FASTA file which has been already assembled. In this case, the pipeline starts from the evalutation of genome assembly. 
+           hybrid : When you have both short paired-end reads and long single-end reads. Unicycler is integrated for hybrid assembler. 
+           assembled_fasta : When you have a FASTA file which has been already assembled. This runtype skips the assembly and starts from the evalutation of genome assembly. 
 - r1 : short paired-end reads, forward for r1. 
 - r2 : short paired-end reads, reverse for r2. 
 - long_reads : long single-end reads. 
@@ -45,7 +45,7 @@ This file contains 7 columns. The header of these columns should be : sample, ru
  - email : The email address that you want to be informed when the execution of the pipeline is completed. 
 The complete location of each input file (FASTQs) is needed for r1, r2, long_reads and assembled_fasta.
 
-================================================================================================================================================================
+=========================================================================================================================================================
  ``` 
 
 
