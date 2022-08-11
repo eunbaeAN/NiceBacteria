@@ -1,5 +1,5 @@
 # NiceBacteria
-NiceBacteria is a pipeline for bacterial genome analysis. This pipeline is developed to target _Bacillus cereus_ genomes, however, it can be used for other bacterial species.
+NiceBacteria is a pipeline for bacterial genome analysis. This pipeline is developed to target _Bacillus cereus_ genomes, however, it can be used for other bacterial species. 
 
 # Overview
 ![alt text](https://github.com/eunbaeAN/IRCAN_pipeline/blob/main/overview.png?raw=true)
@@ -8,7 +8,7 @@ NiceBacteria is a pipeline for bacterial genome analysis. This pipeline is devel
 The main purpose of this pipeline is to automate the processing of high-throughput sequencing (HTS) data for whole bacterial genome analysis. It has been built using Nextflow to manage the workflow. It manages the parallel execution of several tasks and creates REPORT.html, a single document that includes useful metrics about a workflow execution. This pipeline sends a mail once the execution is completed. This email includes the information about a workflow execution and the execution report (REPORT.html).
 
 
-The overview above summarises the different processes and component open-source bioinformatics tools incorporated into this pipeline. It takes FASTQ files provided locally as inputs and processes them automatically with the bioinformatics tools and creates the output files.
+The overview above summarises the different processes and component bioinformatics tools. It takes FASTQ files provided locally as inputs and processes them automatically with the bioinformatics tools and creates the output files.
 
 This pipeline can be split into three main components: pre-processing, processing, and post-processing. 
 The pre-processing step contains quality control and trimming steps.
@@ -21,7 +21,8 @@ The post-processing step consists of annotation, taxonomic classification, detec
  ``` 
  nextflow run /path/to/main.nf --samples "/path/to/my-samples.csv" -ansi-log false
  ```
-NiceBacteria requires main.nf, nexflow.config, the files in modules, lib and workflow folders, and a samplesheet file (csv or txt file) to run.
+NiceBacteria requires main.nf, nexflow.config, the files in modules, lib and workflow folders, and a samplesheet file (csv or txt file) to run. 
+The nemerous incorportaed bioinformatics tools leaded the dependencies. However, the containerization of the dependencies is not done yet. The tools you need for this pipeline are already installed on the server, professorX
 
 
 Please do not forget to put the parameter '--samples' to provide the information of your samples. 
@@ -29,7 +30,7 @@ Please do not forget to put the parameter '--samples' to provide the information
 ### Create csv file "my-samples.csv" (tab delimited file)
 
 This pipeline requires a csv file (or text file) describing the input samples. See an example file "my-samples.csv". 
-This file contains 7 columns. The header of these columns should be : sample, runtype, r1, r2, long_reads, assembled_fasta, email. ***Attention, these columns must be delimited by tabs. And, it's case-sensitive, so please make sure that the header is written in lowercase.*** The "runtype" column will eventually choose the type of input files and an assembler. See below to further information. And please make sure to fill blank cells with "-" or "NA" so that there is no empty cell. 
+This file contains 7 columns. The header of these columns should be : sample, runtype, r1, r2, long_reads, assembled_fasta, email. ***Attention, these columns must be delimited by tabs. And, it's case-sensitive, so please make sure that the header is written in lowercase.*** The "runtype" column will eventually choose the type of input files and an assembler. See below to further information. And please fill blank cell with "-" or "NA" so that there is no empty cell. 
 
 
 |sample|runtype| r1 | r2 | long_reads | assembled_fasta | email |
@@ -45,7 +46,7 @@ This file contains 7 columns. The header of these columns should be : sample, ru
 - sample : Sample name. Remember that this name would be used when the output file is created. 
 - runtype : You can choose one among four runtypes depending on your data sets. 
            "short-reads, long-reads, hybrid or assembled_fasta"
-           (Attnetion, it's case-sensitive. You should write this word in the exactly same way.)
+           (Attention, it's case-sensitive. You should write this word in the exactly same way.)
            short-reads : This takes only short paired-end reads as inputs. It will use the SPAdes as an assembler.
            long-reads : When you have only long single-end reads. This uses the Flye as an assembler.
            hybrid : When you have both short paired-end reads and long single-end reads. Unicycler is integrated for hybrid assembler. 
@@ -63,4 +64,4 @@ The complete location of each input file (FASTQs) is needed for r1, r2, long_rea
 
 # Inputs/outputs 
 
-This pipeline takes FASTQs as input the whole bacterial genome analysis using short read sequencing data obtained from Illumina technology or/and long read sequencing data obtained from Oxford Nanopore Technology or Pacific Biosciences technology. 
+This pipeline takes FASTQs as inputs: short read sequencing data obtained from Illumina technology or/and long read sequencing data obtained from Oxford Nanopore Technology or Pacific Biosciences technology. 
