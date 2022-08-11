@@ -8,7 +8,9 @@ NiceBacteria is a pipeline for bacterial genome analysis. This pipeline is devel
 The main purpose of this pipeline is to automate the processing of high-throughput sequencing (HTS) data for whole bacterial genome analysis. It has been built using Nextflow to manage the workflow. It manages the parallel execution of sereral tasks and creates REPORT.html, a single document includes useful metrics about a workflow execution. This pipeline sends a mail once the execution is complete. This email includes the information about a workflow execution and the execution report (REPORT.html).
 
 
-The overview above summarises the different processes and component bioinformatics tools incorporated into this pipeline. This pipeline can be split into three main components : pre-processing, processing, and post processing. 
+The overview above summarises the different processes and component bioinformatics tools incorporated into this pipeline. This pipeline takes FASTQ files provided locally as inputs and processes them automatically with open-source bioinformatics tools and create the output files locally.
+
+This pipeline can be split into three main components : pre-processing, processing, and post processing. 
 The pre-processing step contains quality controls and trimming step.
 The processing step includes de *novo* assembly and the evaluation of assembly. 
 The post-processing step consists of annotation, taxonomic classification, the detection of resistance and virulence genes, multi-locus sequence typing (MLST) for characterization of bacterial genome, and pan-genome analysis and phylogenetic analysis which provide comparative genomic analysis.
