@@ -33,11 +33,13 @@ sample, runtype, r1, r2, long_reads, assembled_fasta, email.
 
 - sample : sample names email adresse. 
 - runtype : 
-- r1 : short paired-end reads, forward for r1. The complete location of this input file (FASTQs) is nedded. 
-- r2 : short paired-end reads, reverse for r2. The complete location of this input file (FASTQs) is nedded.
-- long_reads : long single-end reads. The complete location of this input file (FASTQs) is nedded. 
-- assembled_fasta : The FASTA file which is already assembled. The complete location of this input file (FASTQs) is nedded. 
-- email 
+- r1 : short paired-end reads, forward for r1. 
+- r2 : short paired-end reads, reverse for r2. 
+- long_reads : long single-end reads. 
+- assembled_fasta : The FASTA file which is already assembled. 
+ - email : The email address that you want to be informed. 
+**The complete location of each input file (FASTQs) is nedded.**
+
 
 # Inputs/outputs 
 
