@@ -30,6 +30,7 @@ This file contains 7 columns : sample, runtype, r1, r2, long_reads, assembled_fa
 
  ``` 
  ================================================================================================================================================================ 
+ 
 - sample : Sample name. Remember that this name would be used when the output file is created. 
 - runtype : You can choose one among four types of runtypes depending on your data sets. 
            "short-reads or long-reads or hybrid or assembled_fasta" 
@@ -43,7 +44,8 @@ This file contains 7 columns : sample, runtype, r1, r2, long_reads, assembled_fa
 - long_reads : long single-end reads. 
 - assembled_fasta : The FASTA file which is already assembled. 
  - email : The email address that you want to be informed when the execution of the pipeline is completed. 
-The complete location of each input file (FASTQs) is nedded for r1, r2, long_reads and assembled_fasta.
+The complete location of each input file (FASTQs) is needed for r1, r2, long_reads and assembled_fasta.
+
 ================================================================================================================================================================
  ``` 
 
