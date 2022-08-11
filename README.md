@@ -21,7 +21,7 @@ The post-processing step consists of annotation, taxonomic classification, detec
  ``` 
  nextflow run /path/to/main.nf --samples "/path/to/my-samples.csv" -ansi-log false
  ```
-NiceBacteria requires main.nf, nexflow.config, the files in modules folder and nf folder, and a samplesheet file (csv or txt file) to run.
+NiceBacteria requires main.nf, nexflow.config, the files in modules, lib and workflow folders, and a samplesheet file (csv or txt file) to run.
 
 
 Please do not forget to put the parameter '--samples' to provide the information of your samples. 
