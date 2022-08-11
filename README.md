@@ -10,10 +10,10 @@ The main purpose of this pipeline is to automate the processing of high-throughp
 
 The overview above summarises the different processes and component open-source bioinformatics tools incorporated into this pipeline. It takes FASTQ files provided locally as inputs and processes them automatically with the bioinformatics tools and creates the output files locally.
 
-This pipeline can be split into three main components : pre-processing, processing, and post processing. 
-The pre-processing step contains quality controls and trimming step.
+This pipeline can be split into three main components: pre-processing, processing, and post-processing. 
+The pre-processing step contains quality control and trimming steps.
 The processing step includes de *novo* assembly and the evaluation of genome assembly. 
-The post-processing step consists of annotation, taxonomic classification, the detection of resistance and virulence genes, multi-locus sequence typing (MLST) for characterization of bacterial genome, and pan-genome analysis and phylogenetic analysis which provide comparative genomic analysis.
+The post-processing step consists of annotation, taxonomic classification, detection of resistance and virulence genes, multi-locus sequence typing (MLST) for characterization of the bacterial genome, and pan-genome analysis and phylogenetic analysis which provide comparative genomic analysis.
 
 
 # Tutorial
