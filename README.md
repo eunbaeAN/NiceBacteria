@@ -29,10 +29,10 @@ This pipeline requires a csv file (or text file) describing the input samples. S
 This file contains 7 columns. The header of these columns should be : sample, runtype, r1, r2, long_reads, assembled_fasta, email. ***Attention, these columns must be delimited by tabs. And, it's case-sensitive, so please make sure that the header is written in lowercase.*** The "runtype" column will eventually choose the type of input files and an assembler. See below to further information.
 
 
-|sample|runtype|r1|r2|long_reads|assembled_fasta|email|
-|-------|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|
-|Sample_1|short-reads|path/to/Illumina_R1.fq.gz|path/to/Illumina_R2.fq.gz|-|-|email@gmail.com|
-|Sample_2|long-reads|-|-|path/to/long_reads_file.fq.gz|-|-|   
+|sample|runtype| r1 | r2 | long_reads | assembled_fasta | email |
+|-------|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|
+|Sample_1| short-reads | path/to/Illumina_R1.fq.gz |  path/to/Illumina_R2.fq.gz |-|-| email@gmail.com|
+|Sample_2| long-reads | - | - | path/to/long_reads_file.fq.gz | - | - |   
 
  ``` 
  ======================================================================================================================================================== 
