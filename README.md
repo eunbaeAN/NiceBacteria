@@ -5,7 +5,7 @@ NiceBacteria is a pipeline for bacterial genome analysis. This pipeline is devel
 ![alt text](https://github.com/eunbaeAN/IRCAN_pipeline/blob/main/overview.png?raw=true)
 
 # Description 
-The main purpose of this pipeline is to automate the processing of high-throughput sequencing (HTS) data for whole bacterial genome analysis. It has been built using Nextflow to manage the workflow. It manages the parallel execution of sereral tasks and creates REPORT.html, a single document includes useful metrics about a workflow execution. This pipeline sends a mail once the execution is complete. This email includes the information about a workflow execution and the execution report (REPORT.html).
+The main purpose of this pipeline is to automate the processing of high-throughput sequencing (HTS) data for whole bacterial genome analysis. It has been built using Nextflow to manage the workflow. It manages the parallel execution of sereral tasks and creates REPORT.html, a single document includes useful metrics about a workflow execution. This pipeline sends a mail once the execution is completed. This email includes the information about a workflow execution and the execution report (REPORT.html).
 
 
 The overview above summarises the different processes and component bioinformatics tools incorporated into this pipeline. This pipeline takes FASTQ files provided locally as inputs and processes them automatically with open-source bioinformatics tools and create the output files locally.
@@ -37,7 +37,7 @@ sample, runtype, r1, r2, long_reads, assembled_fasta, email.
 - r2 : short paired-end reads, reverse for r2. 
 - long_reads : long single-end reads. 
 - assembled_fasta : The FASTA file which is already assembled. 
- - email : The email address that you want to be informed when the execution of the pipeline is complete. 
+ - email : The email address that you want to be informed when the execution of the pipeline is completed. 
 **The complete location of each input file (FASTQs) is nedded.**
 
 
