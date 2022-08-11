@@ -37,7 +37,7 @@ sample, runtype, r1, r2, long_reads, assembled_fasta, email.
 - r2 : short paired-end reads, reverse for r2. 
 - long_reads : long single-end reads. 
 - assembled_fasta : The FASTA file which is already assembled. 
- - email : The email address that you want to be informed. 
+ - email : The email address that you want to be informed when the execution of the pipeline is complete. 
 **The complete location of each input file (FASTQs) is nedded.**
 
 
