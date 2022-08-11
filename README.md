@@ -29,8 +29,8 @@ Please do not forget to put the parameter '--samples' to provide the information
 This pipeline requires a csv file (or text file) describing the input samples. See an example file "my-samples.csv". 
 This file contains 7 columns : sample, runtype, r1, r2, long_reads, assembled_fasta, email. ***Attention, these columns need to be tab delimited.***
 
-- sample : sample names. Remember that this name would be used when the output file is created. 
-- runtype : short-reads or long-reads or hybrid or assembled_fasta
+- sample : Sample name. Remember that this name would be used when the output file is created. 
+- runtype : You can choose between four types of runtypes. "short-reads or long-reads or hybrid or assembled_fasta" (Attnetion, it's case-sensitive.)  
 - r1 : short paired-end reads, forward for r1. 
 - r2 : short paired-end reads, reverse for r2. 
 - long_reads : long single-end reads. 
