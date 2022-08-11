@@ -28,11 +28,17 @@ Please do not forget to put the parameter '--samples' to provide the information
 
 This pipeline requires a csv file (or text file) describing the input samples. See an example file "my-samples.csv". This file contains 7 columns :
 sample, runtype, r1, r2, long_reads, assembled_fasta, email. 
-**Attention, these columns need to be tab delimited.**
-sample names, location to assicociated input files (FASTQs), email adresse. 
-* 
-*  
 
+**Attention, these columns need to be tab delimited.**
+
+- sample : sample names, location to assicociated input files (FASTQs), email adresse. 
+- runtype
+- r1
+- r2
+- long_reads
+- assembled_fasta
+- email 
+- 
 # Inputs/outputs 
 
 This pipeline takes FASTQs as input the whole bacterial genome analysis using short read sequencing data obtained from Illumina technology or/and long read sequencing data obtained from Oxford Nanopore Technology or Pacific Biosciences technology. 
