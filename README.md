@@ -30,7 +30,7 @@ Please do not forget to put the parameter '--samples' to provide the information
 ### Create csv file "my-samples.csv" (tab delimited file)
 
 This pipeline requires a csv file (or text file) describing the input samples. See an example file "my-samples.csv". 
-This file contains 7 columns. The header of these columns should be : sample, runtype, r1, r2, long_reads, assembled_fasta, email. ***Attention, these columns must be delimited by tabs. And, it's case-sensitive, so please make sure that the header is written in lowercase.*** The "runtype" column will eventually choose the type of input files and an assembler. See below to further information. And please fill blank cell with "-" or "NA" so that there is no empty cell. 
+This file contains 7 columns. The header of these columns should be : sample, runtype, r1, r2, long_reads, assembled_fasta, email. ***Attention, these columns must be delimited by tabs. And, it's case-sensitive, so please make sure that the header is written in lowercase.*** See below to further information. And please fill blank cell with "-" or "NA" so that there is no empty cell in the rows that you field.
 
 
 |sample|runtype| r1 | r2 | long_reads | assembled_fasta | email |
@@ -46,6 +46,7 @@ This file contains 7 columns. The header of these columns should be : sample, ru
 - sample : Sample name. Remember that this name would be used when the output file is created. 
 - runtype : You can choose one among four runtypes depending on your data sets. 
            "short-reads, long-reads, hybrid or assembled_fasta"
+           The "runtype" column will eventually choose the type of input files and an assembler. 
            (Attention, it's case-sensitive. You should write this word in the exactly same way.)
            short-reads : This takes only short paired-end reads as inputs. It will use the SPAdes as an assembler.
            long-reads : When you have only long single-end reads. This uses the Flye as an assembler.
