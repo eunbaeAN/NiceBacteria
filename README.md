@@ -64,5 +64,7 @@ The complete location of each input file (FASTQs) is needed for r1, r2, long_rea
 
 
 # Inputs/outputs 
+This pipeline takes FASTQs as inputs: short read sequencing data obtained from Illumina technology or/and long read sequencing data obtained from Oxford Nanopore Technology or Pacific Biosciences technology.
 
-This pipeline takes FASTQs as inputs: short read sequencing data obtained from Illumina technology or/and long read sequencing data obtained from Oxford Nanopore Technology or Pacific Biosciences technology. 
+### Structure of the output folders
+The pipeline will create several folders corresponding to the different processes of the pipeline. The output folder called "results" will be saved in the location where you run this pipeline.
