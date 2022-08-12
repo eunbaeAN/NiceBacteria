@@ -73,7 +73,7 @@ The pipeline will create several folders corresponding to the different processe
 ```
 results
 ├── sample_name
-│   ├── short-reads | long-reads | assembled
+│   ├── short-reads | long-reads | hybrid
 │   ├── ├── sample_name_16S_analysis
 │   ├── ├── ├── results_blast
 │   ├── ├── ├── sample_name_16S_rRNA.fasta
