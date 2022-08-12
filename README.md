@@ -69,7 +69,7 @@ This pipeline takes FASTQs as inputs: short read sequencing data obtained from I
 ### Structure of the output folders
 The pipeline will create several folders corresponding to the different processes of the pipeline. These folders will be saved in the output directory called "results". This directory will be created in the location where you run this pipeline.
 
-**Example of output folders (short-reads, long-reads, hybrid) **:
+**Example of output folders (short-reads, long-reads, hybrid)**:
 ```
 results
 ├── <sample_name>
