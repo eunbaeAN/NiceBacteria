@@ -138,7 +138,7 @@ results
 │   │   │   ├── ...
 ```
 
-**Example of output folders (assembled)** :
+**Example of output folders (assembled)**:
 ```
 results
 │   ├── assembled
