@@ -69,17 +69,27 @@ This pipeline takes FASTQs as inputs: short read sequencing data obtained from I
 ### Structure of the output folders
 The pipeline will create several folders corresponding to the different processes of the pipeline. These folders will be saved in the output directory called "results". This directory will be created in the location where you run this pipeline.
 
-**Example of output folders**:
+**Example of output folders (short-reads, long-reads, hybrid) **:
 ```
 results
 ├── <sample_name>
 │   ├── short-reads | long-reads | hybrid
-│   │   ├── <sample_name>_16S_analysis
-│   │   │   ├── results_blast
-│   │   │   ├── <sample_name>_16S_rRNA.fasta
-│   │   │   ├── <sample_name>_rrna.fasta
-│   │   │   ├── <sample_name>_rra.gff
+│   │   ├── <sample_name>_Raw_reads
+│   │   │   ├── <sample-name>.json
+│   │   │   ├── <sample-name>.consensus.fasta   (mpileup consensus file)
+│   │   │   ├── <sample-name>.vcf.gz   (SNPs in variant calling format file)
+│   │   │   ├── <sample-name>.vcf.gz.tbi
 │   │   │   ├── ...
+│   │   ├── <sample_name>_Cleaned_reads 
+│   │   │   │   ├── <sample_name>_Short-Reads_Cleaned | <sample_name>_Long_Reads_cleaned
+│   │   │   │   ├── ...
+│   │   ├── <sample_name>_Assemblies
+│   │   │   ├── <sample_name>_Short_Reads_Assembly | <sample_name>_Long_Reads_Assembly | <sample_name>_Hybrid_Reads_Assembly 
+│   │   │   │   ├── 
+│   │   │   │   ├── ...
+│   │   |   ├── <sample_name>_Short_Reads_Assembly_Report | <sample_name>_Long_Reads_Assembly_Report | <sample_name>_Hybrid_Reads_Assembly_Report
+│   │   │   │   ├── 
+│   │   │   │   ├── ...
 │   │   ├── <sample_name>_Annotation
 │   │   │   ├── ddbj
 │   │   │   ├── genbank
@@ -90,16 +100,12 @@ results
 │   │   │   ├── genome.faa (protein sequences)
 │   │   │   ├── statistics.txt
 │   │   │   ├── ...
-│   │   ├── <sample_name>_Assemblies
-│   │   │   ├── <sample_name>_Short_Reads_Assembly | <sample_name>_Long_Reads_Assembly | <sample_name>_Hybrid_Reads_Assembly 
-│   │   │   │   ├── 
-│   │   │   │   ├── ...
-│   │   ├── <sample_name>_Short_Reads_Assembly_Report | <sample_name>_Long_Reads_Assembly_Report | <sample_name>_Hybrid_Reads_Assembly_Report
-│   │   │   │   ├── 
-│   │   │   │   ├── ...
-│   │   ├── <sample_name>_Cleaned_reads 
-│   │   │   │   ├── <sample_name>_Short-Reads_Cleaned | <sample_name>_Long_Reads_cleaned
-│   │   │   │   ├── ...
+│   │   ├── <sample_name>_16S_analysis
+│   │   │   ├── results_blast
+│   │   │   ├── <sample_name>_16S_rRNA.fasta
+│   │   │   ├── <sample_name>_rrna.fasta
+│   │   │   ├── <sample_name>_rra.gff
+│   │   │   ├── ...
 │   │   ├── <sample_name>_MLST_typing
 │   │   │   ├── <sample_name>_mlst_results.csv
 │   │   │   ├── ...
@@ -110,12 +116,6 @@ results
 │   │   ├── <sample_name>_Ortho_ANI_analysis
 │   │   │   ├── <sample_name>_Ortho_ANI_analysis.out
 │   │   │   ├── <sample_name>_Reference_genomes_list.txt
-│   │   │   ├── ...
-│   │   ├── <sample_name>_Raw_reads
-│   │   │   ├── <sample-name>.json
-│   │   │   ├── <sample-name>.consensus.fasta   (mpileup consensus file)
-│   │   │   ├── <sample-name>.vcf.gz   (SNPs in variant calling format file)
-│   │   │   ├── <sample-name>.vcf.gz.tbi
 │   │   │   ├── ...
 │   │   ├── <sample_name>_Pan_genome_analysis
 │   │   │   ├── genome_presence_absence.csv
@@ -133,6 +133,58 @@ results
 │   │   │   ├── <sample_name>_multiple_alignments_by_muscle.afa.treefile
 │   │   │   ├── <sample_name>_phylotree.png
 │   │   │   ├── ...
+
+
+**Example of output folders (assembled) **:
+results
+│   ├── assembled
+│   │   ├── <sample_name>_Short_Reads_Assembly_Report | <sample_name>_Long_Reads_Assembly_Report | <sample_name>_Hybrid_Reads_Assembly_Report
+│   │   │   │   ├── 
+│   │   │   │   ├── ...
+│   │   ├── <sample_name>_Annotation
+│   │   │   ├── ddbj
+│   │   │   ├── genbank
+│   │   │   ├── application.log
+│   │   │   ├── genome.gff (GFF3)
+│   │   │   ├── genome.gbk (genbank)
+│   │   │   ├── genome.ffn (gene sequences)
+│   │   │   ├── genome.faa (protein sequences)
+│   │   │   ├── statistics.txt
+│   │   │   ├── ...
+│   │   ├── <sample_name>_16S_analysis
+│   │   │   ├── results_blast
+│   │   │   ├── <sample_name>_16S_rRNA.fasta
+│   │   │   ├── <sample_name>_rrna.fasta
+│   │   │   ├── <sample_name>_rra.gff
+│   │   │   ├── ...
+│   │   ├── <sample_name>_MLST_typing
+│   │   │   ├── <sample_name>_mlst_results.csv
+│   │   │   ├── ...
+│   │   ├── <sample_name>_Resistance_Virulence_genes
+│   │   │   ├── <sample_name>_resistance_genes.xls
+│   │   │   ├── <sample_name>_virulence_genes.xls
+│   │   │   ├── ...
+│   │   ├── <sample_name>_Ortho_ANI_analysis
+│   │   │   ├── <sample_name>_Ortho_ANI_analysis.out
+│   │   │   ├── <sample_name>_Reference_genomes_list.txt
+│   │   │   ├── ...
+│   │   ├── <sample_name>_Pan_genome_analysis
+│   │   │   ├── genome_presence_absence.csv
+│   │   │   ├── accessory.tab
+│   │   │   ├── core_accessory.tab
+│   │   │   ├── number_of_conserved_genes.Rtab
+│   │   │   ├── number_of_genes_in_pan_genome.Rtab
+│   │   │   ├── summary_statistics.txt
+│   │   │   ├── pan_genome_frequence.png
+│   │   │   ├── pan_genome_matrix.png
+│   │   │   ├── pan_genome_pie.png
+│   │   │   ├── ...
+│   │   ├──<sample_name>_Phylogenetic_tree
+│   │   │   ├── <sample_name>_multiple_alignments_by_muscle.afa
+│   │   │   ├── <sample_name>_multiple_alignments_by_muscle.afa.treefile
+│   │   │   ├── <sample_name>_phylotree.png
+│   │   │   ├── ...
+
 
 ```
 
