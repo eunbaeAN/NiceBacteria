@@ -67,4 +67,73 @@ The complete location of each input file (FASTQs) is needed for r1, r2, long_rea
 This pipeline takes FASTQs as inputs: short read sequencing data obtained from Illumina technology or/and long read sequencing data obtained from Oxford Nanopore Technology or Pacific Biosciences technology.
 
 ### Structure of the output folders
-The pipeline will create several folders corresponding to the different processes of the pipeline. The output folder called "results" will be saved in the location where you run this pipeline.
+The pipeline will create several folders corresponding to the different processes of the pipeline. These folders will be saved in the output directory called "results". This directory will be created in the location where you run this pipeline.
+
+**Example of output folders**:
+```
+results
+├── sample_name
+│   ├── short-reads | long-reads | assembled
+│   ├── ├── sample_name_16S_analysis
+│   ├── ├── ├── results_blast
+│   ├── ├── ├── sample_name_16S_rRNA.fasta
+│   ├── ├── ├── sample_name_rrna.fasta
+│   ├── ├── ├── sample_name_rra.gff
+│   ├── ├── ├── ...
+│   ├── ├── sample_name_Annotation
+│   ├── ├── ├── ddbj
+│   ├── ├── ├── genbank
+│   ├── ├── ├── application.log
+│   ├── ├── ├── genome.gff (GFF3)
+│   ├── ├── ├── genome.gbk (genbank)
+│   ├── ├── ├── genome.ffn (gene sequences)
+│   ├── ├── ├── genome.faa (protein sequences)
+│   ├── ├── ├── statistics.txt
+│   ├── ├── ├── ...
+│   ├── ├── sample_name_Assemblies
+│   ├── ├── ├── Sample_name_Short_Reads_Assembly  | Sample_name_Long_Reads_Assembly | Sample_name_Hybrid_Reads_Assembly 
+│   ├── ├── ├── ├── 
+│   ├── ├── ├── Sample_name_Short_Reads_Assembly_Report  | Sample_name_Long_Reads_Assembly_Report | Sample_name_Hybrid_Reads_Assembly_Report
+│   ├── ├── ├── ├── ...
+
+
+│   ├── ├── sample_name_Cleaned_reads 
+│   ├── [<sample-name>.finished | <sample-name>.failed]
+│   ├── <sample-name>.json
+│   ├── ...
+│   ├── ├── sample_name_MLST_typing
+│   ├── [<sample-name>.finished | <sample-name>.failed]
+│   ├── <sample-name>.json
+│   ├── ...
+│   ├── ├── sample_name_Resistance_Virulence_genes
+│   ├── [<sample-name>.finished | <sample-name>.failed]
+│   ├── <sample-name>.json
+│   ├── ...
+│   ├── ├── sample_name_Ortho_ANI_analysis
+│   ├── [<sample-name>.finished | <sample-name>.failed]
+│   ├── <sample-name>.json
+│   ├── <sample-name>.bam
+│   ├── <sample-name>.bam.bai
+│   ├── ...
+│   ├── ├── sample_name_Raw_reads
+│   ├── <sample-name>.json
+│   ├── <sample-name>.consensus.fasta   (mpileup consensus file)
+│   ├── <sample-name>.vcf.gz   (SNPs in variant calling format file)
+│   ├── <sample-name>.vcf.gz.tbi
+│   ├── <sample-name>.chk   (bcftools stats)
+│   ├── <sample-name>.csv   (SNPeff per gene statisics)
+│   ├── ...
+│   ├── ├── sample_name_Pan_genome_analysis
+│   ├── info.json
+│   ├── core.fasta   (core genome sequences)
+│   ├── pan.fasta   (pan genome sequences)
+│   ├── pan-matrix.tsv   (pan genome matrix)
+│   ├── <sample-name>.json
+│   ├── ...
+│   ├── ├── sample_name_Phylogenetic_tree
+│   ├── ├── ├── info.json
+│   ├── ├── ├── tree.nwk   (phylogenetic tree in newick file)
+│   ├── ├── ├── consensus.fasta   (global consensus file)
+```
+
+
