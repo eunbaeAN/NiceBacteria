@@ -88,7 +88,12 @@ results
 │   │   │   │   ├── 
 │   │   │   │   ├── ...
 │   │   |   ├── <sample_name>_Short_Reads_Assembly_Report | <sample_name>_Long_Reads_Assembly_Report | <sample_name>_Hybrid_Reads_Assembly_Report
-│   │   │   │   ├── 
+│   │   │   │   ├── basic_stats
+│   │   │   │   ├── icarus_viewers
+│   │   │   │   ├── icarus.html
+│   │   │   │   ├── quast.log
+│   │   │   │   ├── report.html
+│   │   │   │   ├── report.pdf
 │   │   │   │   ├── ...
 │   │   ├── <sample_name>_Annotation
 │   │   │   ├── ddbj
@@ -133,13 +138,19 @@ results
 │   │   │   ├── <sample_name>_multiple_alignments_by_muscle.afa.treefile
 │   │   │   ├── <sample_name>_phylotree.png
 │   │   │   ├── ...
+```
 
-
-**Example of output folders (assembled) **:
+**Example of output folders (assembled)** :
+```
 results
 │   ├── assembled
-│   │   ├── <sample_name>_Short_Reads_Assembly_Report | <sample_name>_Long_Reads_Assembly_Report | <sample_name>_Hybrid_Reads_Assembly_Report
-│   │   │   │   ├── 
+│   │   ├── <sample_name>_Assembly_Report
+│   │   │   │   ├── basic_stats
+│   │   │   │   ├── icarus_viewers
+│   │   │   │   ├── icarus.html
+│   │   │   │   ├── quast.log
+│   │   │   │   ├── report.html
+│   │   │   │   ├── report.pdf
 │   │   │   │   ├── ...
 │   │   ├── <sample_name>_Annotation
 │   │   │   ├── ddbj
@@ -184,8 +195,6 @@ results
 │   │   │   ├── <sample_name>_multiple_alignments_by_muscle.afa.treefile
 │   │   │   ├── <sample_name>_phylotree.png
 │   │   │   ├── ...
-
-
 ```
 
 
