@@ -75,10 +75,8 @@ results
 ├── <sample_name>
 │   ├── short-reads | long-reads | hybrid
 │   │   ├── <sample_name>_Raw_reads
-│   │   │   ├── <sample-name>.json
-│   │   │   ├── <sample-name>.consensus.fasta   (mpileup consensus file)
-│   │   │   ├── <sample-name>.vcf.gz   (SNPs in variant calling format file)
-│   │   │   ├── <sample-name>.vcf.gz.tbi
+│   │   │   ├── Illumina_Raw_reads
+│   │   │   ├── Nanopore_Raw_reads
 │   │   │   ├── ...
 │   │   ├── <sample_name>_Cleaned_reads 
 │   │   │   │   ├── <sample_name>_Short-Reads_Cleaned | <sample_name>_Long_Reads_cleaned
