@@ -93,7 +93,7 @@ workflow TEST_WORKFLOW {
 		PREPARE_SAMPLES(input_ch)
 		PREPARE_SAMPLES.out.FileExists.view()
 
-        PREPROCESSING(PREPARE_SAMPLES.out.fastq_long_rawreads, PREPARE_SAMPLES.out.fastq_short_rawreads)
+        PREPROCESSING(PREPARE_SAMPLES.out.fastq_long_rawreads.join(PREPARE_SAMPLES.out.fastq_short_rawreads))
  		PROCESSING(PREPROCESSING.out) 		
 
 		BARRNAP(PROCESSING.out.assembly_results_fasta)
