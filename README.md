@@ -201,5 +201,6 @@ results
 
 - Not a valid project name: /home
 - [a7/c25645] NOTE: Process `TEST_WORKFLOW:PREPROCESSING (Sample_66, hybrid)` terminated with an error exit status (1) -- Error is ignored
+- Failed to invoke `workflow.onComplete` event handler
 
 
