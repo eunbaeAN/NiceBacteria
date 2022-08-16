@@ -196,5 +196,6 @@ results
 │   │   │   ├── <sample_name>_phylotree.png
 │   │   │   ├── ...
 ```
-
+# Errors 
+Failed to invoke `workflow.onComplete` event handler
 
