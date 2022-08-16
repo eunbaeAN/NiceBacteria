@@ -39,7 +39,7 @@ process PREPARE_SAMPLES {
             OPTS="--sample !{meta.id} --runtype !{runtype}"
  
             gzip -cd !{meta.id}_Raw_reads/Illumina_Raw_reads/!{meta.id}_R1.fq.gz | fastq-scan > !{meta.id}_r1.json
-            gzip -cd !{meta.id}_Raw_reads/Illumina_Raw_reads/!{meta.id}_R1.fq.gz | fastq-scan > !{meta.id}_r2.json
+            gzip -cd !{meta.id}_Raw_reads/Illumina_Raw_reads/!{meta.id}_R2.fq.gz | fastq-scan > !{meta.id}_r2.json
 
             if ! /home/ean/Samples_data/workflow/Samples/separation_nextflow_modules/modules/bin/check-fastqs_r1r2.py --fq1 !{meta.id}_r1.json --fq2 !{meta.id}_r2.json ${OPTS}; then
                 ERROR=1
@@ -90,7 +90,7 @@ process PREPARE_SAMPLES {
             OPTS="--sample !{meta.id} --runtype !{runtype}"
  
             gzip -cd !{meta.id}_Raw_reads/Illumina_Raw_reads/!{meta.id}_R1.fq.gz | fastq-scan > !{meta.id}_r1.json
-            gzip -cd !{meta.id}_Raw_reads/Illumina_Raw_reads/!{meta.id}_R1.fq.gz | fastq-scan > !{meta.id}_r2.json
+            gzip -cd !{meta.id}_Raw_reads/Illumina_Raw_reads/!{meta.id}_R2.fq.gz | fastq-scan > !{meta.id}_r2.json
 
             if ! /home/ean/Samples_data/workflow/Samples/separation_nextflow_modules/modules/bin/check-fastqs_r1r2.py --fq1 !{meta.id}_r1.json --fq2 !{meta.id}_r2.json ${OPTS}; then
                 ERROR=1
