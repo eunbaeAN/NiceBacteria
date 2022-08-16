@@ -10,8 +10,7 @@ process PREPROCESSING {
         saveAs: { filename -> "$filename" }
 
 	input: 
-	tuple val(meta), path(fq)
-	tuple val(meta), path(extra)
+	tuple val(meta), path(fq), path(extra)
 
 	output:
 	tuple val(meta), path("${meta.id}_Cleaned_reads/${meta.id}_{Short,Long}_Reads_Cleaned/*"), emit: preprocessing_results
