@@ -59,7 +59,7 @@ This file contains 7 columns. The header of these columns should be : sample, ru
 - long_reads : long single-end reads. 
 - assembled_fasta : The FASTA file which is already assembled. 
  - email : The email address that you want to be informed when the execution of the pipeline is completed. 
-The complete location of each input file (FASTQs) is needed for r1, r2, long_reads and assembled_fasta.
+The complete path of each input file (FASTQs) is needed for r1, r2, long_reads and assembled_fasta.
 
 ===================================================================================================================================================================
  ``` 
