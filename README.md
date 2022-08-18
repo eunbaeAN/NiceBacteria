@@ -15,8 +15,7 @@ The pre-processing step contains quality control and trimming steps.
 The processing step includes de *novo* assembly and the evaluation of genome assembly. 
 The post-processing step consists of annotation, taxonomic classification, detection of resistance and virulence genes, multi-locus sequence typing (MLST) for characterization of the bacterial genome, and pan-genome analysis and phylogenetic analysis which provide comparative genomic analysis.
 
-# Processes
-
+# Processes and component tools
 
 # Tutorial
 ### Running pipeline
