@@ -28,10 +28,10 @@ The nemerous incorportaed bioinformatics tools leaded the dependencies. However,
 Please do not forget to put the parameter '--samples' to provide the information of your samples. 
 
 #### nextflow options which can be useful
-https://www.nextflow.io/docs/latest/cli.html?highlight=resume
 -qs, -queue-size : Max number of processes that can be executed in parallel by each executor.
- -resume : 
- -ansi-log false (Default : true)
+-resume : 
+-ansi-log false (Default : true)
+[More nextflow options](https://www.nextflow.io/docs/latest/cli.html?highlight=resume)
 ### Create csv file "my-samples.csv" (tab delimited file)
 
 This pipeline requires a csv file (or text file) describing the input samples. See an example file "my-samples.csv". 
