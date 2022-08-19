@@ -28,9 +28,9 @@ The nemerous incorportaed bioinformatics tools leaded the dependencies. However,
 Please do not forget to put the parameter '--samples' to provide the information of your samples. 
 
 #### nextflow options which can be useful
--qs, -queue-size : Max number of processes that can be executed in parallel by each executor.
--resume : 
--ansi-log false (Default : true)
+-qs, -queue-size : Max number of processes that can be executed in parallel by each executor. <br>
+-resume :  <br>
+-ansi-log false (Default : true) <br>
 [More nextflow options](https://www.nextflow.io/docs/latest/cli.html?highlight=resume)
 
 ### Create csv file "my-samples.csv" (tab delimited file)
