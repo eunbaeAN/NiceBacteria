@@ -31,12 +31,13 @@ process PREPARE_SAMPLES {
     if [ "!{runtype}" == "hybrid" ]; then
         # Paired-End Reads + Nanopore reads
         if [ -s !{r1[0]} ] && [ -s !{r2[0]} ] && [ -s !{extra} ]; then
-        #   echo "Input Upload Sucess ! : Your input file is found and saved in results/!{meta.id}/!{runtype}/!{meta.id}_Raw_reads"
             cp -L !{r1[0]} !{meta.id}_Raw_reads/Illumina_Raw_reads/!{meta.id}_R1.fq.gz
             cp -L !{r2[0]} !{meta.id}_Raw_reads/Illumina_Raw_reads/!{meta.id}_R2.fq.gz
             cp -L !{extra} !{meta.id}_Raw_reads/Nanopore_Raw_reads/!{meta.id}.fq.gz
-
-           ERROR=0
+            #echo "Input Upload Sucess ! : Your input file is found and saved in results/!{meta.id}/!{runtype}/!{meta.id}_Raw_reads"
+           
+            ERROR=0
+            
             # Check paired-end reads have same read counts
             OPTS="--sample !{meta.id} --runtype !{runtype}"
  
@@ -46,11 +47,11 @@ process PREPARE_SAMPLES {
             if ! /home/ean/Samples_data/workflow/Samples/separation_nextflow_modules/modules/bin/check-fastqs_r1r2.py --fq1 !{meta.id}_r1.json --fq2 !{meta.id}_r2.json ${OPTS}; then
                 ERROR=1
             fi
+            
             rm !{meta.id}_r1.json !{meta.id}_r2.json
 
             if [ "${ERROR}" -eq "1" ]; then
-               mv !{meta.id}_Raw_reads/Illumina_Raw_reads/ !{meta.id}_Raw_reads/failed-tests-fastqs/
-               echo "Error : The reads total of Illumina inputs (R1 and R2) are different."
+               echo "WARN : sample("!{meta.id}"), The reads total of Illumina inputs (R1 and R2) are different. The pipeline continues anyway.."
             fi
 
         elif ! [ -s !{r2[0]} ] && ! [ -s !{r2[0]} ]; then
@@ -97,12 +98,13 @@ process PREPARE_SAMPLES {
             if ! /home/ean/Samples_data/workflow/Samples/separation_nextflow_modules/modules/bin/check-fastqs_r1r2.py --fq1 !{meta.id}_r1.json --fq2 !{meta.id}_r2.json ${OPTS}; then
                 ERROR=1
             fi
+
             rm !{meta.id}_r1.json !{meta.id}_r2.json
 
             if [ "${ERROR}" -eq "1" ]; then
-               mv !{meta.id}_Raw_reads/Illumina_Raw_reads/ !{meta.id}_Raw_reads/failed-tests-fastqs/
-               echo "Error : sample("!{meta.id}"), The reads total of Illumina inputs (R1 and R2) are different."
+               echo "WARN : sample("!{meta.id}"), The reads total of Illumina inputs (R1 and R2) are different. The pipeline continues anyway.."
             fi
+
         elif ! [ -s !{r1[0]} ]; then
             echo "Error (Input File not found) : Please check again your input file information that you provide (--samples txt or csv file, separator: \\t ). \nError INFORMATION : sample("!{meta.id}"), runtype("!{runtype}"), reads(r1) \n(ATTENTION ! Check again the PATH of input files and file name, lowercase and uppercase letters are considered different.)"
         elif ! [ -s !{r2[0]} ]; then
