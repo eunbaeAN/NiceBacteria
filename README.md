@@ -32,6 +32,7 @@ Please do not forget to put the parameter '--samples' to provide the information
 -resume : 
 -ansi-log false (Default : true)
 [More nextflow options](https://www.nextflow.io/docs/latest/cli.html?highlight=resume)
+
 ### Create csv file "my-samples.csv" (tab delimited file)
 
 This pipeline requires a csv file (or text file) describing the input samples. See an example file "my-samples.csv". 
