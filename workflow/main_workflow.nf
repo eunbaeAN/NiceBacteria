@@ -2,8 +2,6 @@ nextflow.enable.dsl = 2
 //params.outdir = 'results'
 
 params.help = false
-params.dfast_organism = false
-params.dfast_strain = false
 params.samples = false
 /*
 ========================================================================================
