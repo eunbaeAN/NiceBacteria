@@ -18,6 +18,9 @@ The post-processing step consists of annotation, taxonomic classification, detec
 # Processes and component tools
 
 # Tutorial
+### help message : 
+```nextflow run /path/to/main.nf --help```
+
 ### Running pipeline
  ``` 
  nextflow run /path/to/main.nf --samples "/path/to/my-samples.csv" -ansi-log false
@@ -27,7 +30,7 @@ The nemerous incorportaed bioinformatics tools leaded the dependencies. However,
 
 Please do not forget to put the parameter '--samples' to provide the information of your samples. 
 
-#### nextflow options which can be useful
+#### Nextflow options which can be useful
 -qs, -queue-size : Max number of processes that can be executed in parallel by each executor. <br>
 -resume :  <br>
 -ansi-log false (Default : true) <br>
