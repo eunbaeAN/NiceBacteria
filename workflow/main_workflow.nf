@@ -187,8 +187,11 @@ def helpMessage() {
 	Options : 
 		-ansi-log false : I recommand you to use the option "-ansi-log false" which allows you to have the information of the process by each sample. (Default : true) 
 		-resume : Execute the script using the cached results, useful to continue executions that was stopped by an error. 
-		-cpus : 
 		-qs, -queue-size : Max number of processes that can be executed in parallel by each executor.
+	
+	You can only change the number of cpus on the "nextflow.config".
+    	Otherwise  you can also change the number of "-qs".  This will help you to control your cpus numbers.
+
 	If you need more information please visit here : https://github.com/eunbaeAN/NiceBacteria
     """.stripIndent()
 }
