@@ -27,7 +27,7 @@ process DFAST {
 			cp assembly.fasta ${meta.id}_assembly.fasta
 	fi
 	
-	dfast --force --complete f --organism "Bacillus cereus" --strain ${meta.id} --locus_tag_prefix ${meta.id} --use_separate_tags t --minimum_length 200 --genome ${meta.id}_assembly.fasta --out ${meta.id}_Annotation --use_prodigal --use_trnascan bact --use_rnammer bact --cpu 5 
+	dfast --force --complete f --organism ${meta.id} --strain ${meta.id} --locus_tag_prefix ${meta.id} --use_separate_tags t --minimum_length 200 --genome ${meta.id}_assembly.fasta --out ${meta.id}_Annotation --use_prodigal --use_trnascan bact --use_rnammer bact --cpu 5 
 	"""
 }
 
