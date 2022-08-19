@@ -25,9 +25,13 @@ The post-processing step consists of annotation, taxonomic classification, detec
 NiceBacteria requires main.nf, nexflow.config, the files in modules, lib and workflow folders, and a samplesheet file (csv or txt file) to run. 
 The nemerous incorportaed bioinformatics tools leaded the dependencies. However, the containerization of the dependencies is not done yet. Instead, the tools you need for this pipeline are already installed on the server, professorX
 
-
 Please do not forget to put the parameter '--samples' to provide the information of your samples. 
 
+#### nextflow options which can be useful
+https://www.nextflow.io/docs/latest/cli.html?highlight=resume
+-qs, -queue-size : Max number of processes that can be executed in parallel by each executor.
+ -resume : 
+ -ansi-log false (Default : true)
 ### Create csv file "my-samples.csv" (tab delimited file)
 
 This pipeline requires a csv file (or text file) describing the input samples. See an example file "my-samples.csv". 
